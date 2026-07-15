@@ -1,0 +1,21 @@
+('''
+
+       <!DOCTYPE html><html><body>
+
+       {% with msgs = get_flashed_messages(with_categories=true) %}
+
+         {% for cat, msg in msgs %}
+
+           <p>{{ msg }}</p>
+
+         {% endfor %}
+
+       {% endwith %}
+
+       <h1>Olá, {{ nome }}!</h1>
+
+       <a href="/logout">Sair</a>
+
+       </body></html>
+
+   ''', nome=nome)

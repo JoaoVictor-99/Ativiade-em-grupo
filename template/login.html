@@ -1,0 +1,29 @@
+('''
+
+       <!DOCTYPE html><html><body>
+
+       {% with msgs = get_flashed_messages(with_categories=true) %}
+
+         {% for cat, msg in msgs %}
+
+           <p style="color:red">{{ msg }}</p>
+
+         {% endfor %}
+
+       {% endwith %}
+
+       <h1>Login</h1>
+
+       <form method="POST">
+
+         <input type="email" name="email" placeholder="E-mail"><br><br>
+
+         <input type="password" name="senha" placeholder="Senha"><br><br>
+
+         <button type="submit">Entrar</button>
+
+       </form>
+
+       </body></html>
+
+   ''')
